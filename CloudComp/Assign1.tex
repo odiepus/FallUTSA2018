@@ -1,0 +1,108 @@
+%% LyX 2.3.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{graphicx}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\title{Assignment 1 : MPI Programming and Benchmarking MPI Cluster in the
+Cloud}
+
+\author{Amatullah Yousuf, David J, Hector Herrera, Seth Louis Allen Greco}
+\maketitle
+
+\part{Ray Tracing Engine Performance}
+
+\section{By Slots}
+
+For the first experiment we ran the ray tracing program using two,
+four, and six processes. In each case we were able to see faster ray
+tracing times. We noticed as the number of processes went up, the
+change in times became smaller. Increasing processes produced dimishing
+returns. The time difference between two nodes and four node was 0.3565
+seconds. The difference in time to complete between four nodes and
+six nodes was 0.0114 seconds.
+
+\bigskip
+
+\centerline
+
+\begin{tabular}{|c|c|c|}
+\hline 
+Slots & Time to Complete & Difference\tabularnewline
+\hline 
+\hline 
+2 & 0.7350 & 0\tabularnewline
+\hline 
+4 & \multicolumn{1}{c||}{0.3785} & 0.3565\tabularnewline
+\hline 
+6 & 0.3671 & 0.0114\tabularnewline
+\hline 
+\end{tabular}
+
+\centerline
+
+\bigskip
+
+\includegraphics[scale=0.5]{C:/Users/guak/Pictures/byslotgraph}
+
+\caption{By slot graph.}
+
+\bigskip
+
+\includegraphics[scale=0.5]{C:/Users/guak/Pictures/2procsBySlot}
+
+\caption{Output of two processes by slot.}
+
+\bigskip
+
+\includegraphics[scale=0.5]{C:/Users/guak/Pictures/4procsBySlot}
+
+\caption{Output of four processes by slot.}
+
+\bigskip
+
+\includegraphics[scale=0.5]{C:/Users/guak/Pictures/6procsBySlots}
+
+\caption{Output of six processes by slot.}
+
+
+\section{By Node}
+
+The ray tracing experiment with the by-node option led to greater
+changes between the number of processes, but overall took longer to
+complete. From two nodes to four nodes the ray tracing time difference
+was 0.1987 seconds. And the difference between four nodes and six
+nodes was 0.1683 seconds. Similar to the by-slot experiment, there
+is a trend of deminishing returns. 
+
+\bigskip
+
+\includegraphics[scale=0.5]{C:/Users/guak/Pictures/2procByNode}
+
+\caption{Output of two processes by node.}
+
+\bigskip
+
+\includegraphics[scale=0.5]{C:/Users/guak/Pictures/4procsByNode}
+
+\caption{Output of four processes by node.}
+
+\bigskip
+
+\includegraphics[scale=0.5]{C:/Users/guak/Pictures/6procsByNode}
+
+\caption{Output of two processes by node.}
+
+\end{document}
