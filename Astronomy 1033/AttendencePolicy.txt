@@ -1,0 +1,9 @@
+Class Attendance:
+  Class attendance is the physical presence and participation in all
+  scheduled class meetings and assignments by the registered student 
+  for face-to-face classes
+
+Request for Excused Absenses:
+  Each instructor should inform the student, at the time the student notifies
+  the instructor of a planned absence, of the deadline for completion of the
+  missed assignment or examination
